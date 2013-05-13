@@ -2,7 +2,7 @@
 //  UTLAppDelegate.m
 //  iOperate
 //
-//  Created by Max Gilbert on 5/13/13.
+//  Created by Max Gilbert & James Bartolozzi on 5/13/13.
 //  Copyright (c) 2013 SIG Center. All rights reserved.
 //
 
