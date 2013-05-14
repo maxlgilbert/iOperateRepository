@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UTLViewController : UIViewController
-
+@property (copy, nonatomic) NSString *userName;
+@property (copy, nonatomic) NSString *password;
 @end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="FkD-QS-onY">
     <dependencies>
         <development version="4600" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
@@ -135,7 +135,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dcJ-eZ-8jB" firstAttribute="bottom" secondItem="MHY-11-34W" secondAttribute="bottom" type="default" id="1q8-1B-4DY"/>
                             <constraint firstItem="Ibk-MZ-Qtj" firstAttribute="leading" secondItem="MHY-11-34W" secondAttribute="leading" type="default" id="5nX-e1-Zg0"/>
@@ -177,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4671" y="-1851"/>
+            <point key="canvasLocation" x="-3879" y="-1871"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="h0x-uV-JuM">
@@ -191,7 +191,85 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aso-R4-OXL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3562" y="-1871"/>
+            <point key="canvasLocation" x="-2976" y="-1871"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7Hm-LP-kAW">
+            <objects>
+                <viewController id="FkD-QS-onY" customClass="UTLViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zYm-4P-aJt">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHN-1u-gGD">
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="vIY-zq-BDS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendLogin:" destination="FkD-QS-onY" eventType="touchUpInside" id="PDq-yd-JVo"/>
+                                    <segue destination="2" kind="modal" id="z8y-7H-xa7"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCW-bg-Ubb">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="passwordInput:" destination="FkD-QS-onY" eventType="editingChanged" id="HmR-sZ-TDp"/>
+                                    <action selector="passwordInput:" destination="FkD-QS-onY" eventType="editingDidEnd" id="Lw3-gz-zgq"/>
+                                    <action selector="passwordInput:" destination="FkD-QS-onY" eventType="valueChanged" id="XXV-Mb-Qs8"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rdw-In-tjL">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="Ij8-a3-9JD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="userNameInput:" destination="FkD-QS-onY" eventType="editingDidEnd" id="35S-KS-dUl"/>
+                                    <action selector="userNameInput:" destination="FkD-QS-onY" eventType="editingChanged" id="ijb-lK-w2B"/>
+                                    <action selector="userNameInput:" destination="FkD-QS-onY" eventType="valueChanged" id="nh5-P6-CW4"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FHN-1u-gGD" secondAttribute="bottom" constant="474" id="2ox-rV-YBj"/>
+                            <constraint firstItem="FCW-bg-Ubb" firstAttribute="leading" secondItem="rdw-In-tjL" secondAttribute="leading" type="default" id="7YJ-rL-uIs"/>
+                            <constraint firstItem="FHN-1u-gGD" firstAttribute="centerX" secondItem="FCW-bg-Ubb" secondAttribute="centerX" type="default" id="8Dq-Zi-tF0"/>
+                            <constraint firstItem="FHN-1u-gGD" firstAttribute="centerX" secondItem="zYm-4P-aJt" secondAttribute="centerX" type="default" id="F5i-HV-PbG"/>
+                            <constraint firstItem="FCW-bg-Ubb" firstAttribute="top" secondItem="zYm-4P-aJt" secondAttribute="top" constant="455" id="Qyy-C1-fwD"/>
+                            <constraint firstItem="rdw-In-tjL" firstAttribute="top" secondItem="zYm-4P-aJt" secondAttribute="top" constant="396" id="Vdn-sa-ytK"/>
+                            <constraint firstItem="rdw-In-tjL" firstAttribute="trailing" secondItem="FCW-bg-Ubb" secondAttribute="trailing" type="default" id="e0A-hC-Swz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="FHN-1u-gGD" id="arC-j1-6cq"/>
+                        <outlet property="passwordField" destination="FCW-bg-Ubb" id="z3X-Ag-MrH"/>
+                        <outlet property="userNameField" destination="rdw-In-tjL" id="4Vd-oW-cQd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSo-U7-2vf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4851" y="-1892"/>
         </scene>
     </scenes>
     <classes>
@@ -200,6 +278,14 @@
         </class>
         <class className="UTLViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UTLViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="passwordInput:"/>
+                <relationship kind="action" name="sendLogin:"/>
+                <relationship kind="action" name="userNameInput:"/>
+                <relationship kind="outlet" name="loginButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="userNameField" candidateClass="UITextField"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
