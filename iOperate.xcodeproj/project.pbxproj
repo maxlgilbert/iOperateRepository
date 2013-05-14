@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A8352DE1742D791000CA4D4 /* 10 a-Color-Flat.tif in Resources */ = {isa = PBXBuildFile; fileRef = 1A8352DD1742D791000CA4D4 /* 10 a-Color-Flat.tif */; };
+		1A8352E01742E0B0000CA4D4 /* wallpaper-293423.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A8352DF1742E0B0000CA4D4 /* wallpaper-293423.jpg */; };
 		D62B3A7A17419038006BFAE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62B3A7917419038006BFAE8 /* UIKit.framework */; };
 		D62B3A7C17419038006BFAE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62B3A7B17419038006BFAE8 /* Foundation.framework */; };
 		D62B3A7E17419038006BFAE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62B3A7D17419038006BFAE8 /* CoreGraphics.framework */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		1A8352DD1742D791000CA4D4 /* 10 a-Color-Flat.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "10 a-Color-Flat.tif"; sourceTree = "<group>"; };
+		1A8352DF1742E0B0000CA4D4 /* wallpaper-293423.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wallpaper-293423.jpg"; sourceTree = "<group>"; };
 		D62B3A7617419038006BFAE8 /* iOperate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOperate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62B3A7917419038006BFAE8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D62B3A7B17419038006BFAE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,6 +100,7 @@
 		D62B3A8017419038006BFAE8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1A8352DF1742E0B0000CA4D4 /* wallpaper-293423.jpg */,
 				D62B3A8117419038006BFAE8 /* iOperate-Info.plist */,
 				1A8352DD1742D791000CA4D4 /* 10 a-Color-Flat.tif */,
 				D62B3A8217419038006BFAE8 /* InfoPlist.strings */,
@@ -168,6 +171,7 @@
 				D62B3A9017419038006BFAE8 /* Default-568h@2x.png in Resources */,
 				D62B3A9317419038006BFAE8 /* MainStoryboard.storyboard in Resources */,
 				1A8352DE1742D791000CA4D4 /* 10 a-Color-Flat.tif in Resources */,
+				1A8352E01742E0B0000CA4D4 /* wallpaper-293423.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
